@@ -1,0 +1,64 @@
+body {
+  background-color: #004c66;
+}
+.cirkel {
+  margin: 70px auto;
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  margin: 70px auto;
+  width: 80px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.dot1 {
+  background-color: #1abc9c;
+  animation: hop 0.6s 0.1s linear infinite;
+}
+.dot2 {
+  background-color: #ffd64a;
+  animation: hop 0.6s 0.2s linear infinite;
+}
+.dot3 {
+  background-color: #e067af;
+  animation: hop 0.6s 0.3s linear infinite;
+}
+
+@keyframes hop {
+  50% {
+    transform: translate(0, 15px);
+  }
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: #008cbc;
+  display: inline-block;
+  animation: puls 1s ease-in alternate infinite;
+}
+
+.box2,
+.box3 {
+  animation-delay: 1s;
+}
+
+@keyframes puls {
+  100% {
+    opacity: 0;
+  }
+}
